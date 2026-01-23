@@ -19,7 +19,7 @@ export async function getClientForAccount(account: Account): Promise<TwitterOpen
   if (existing) return existing;
   const client = await createClientFromAccount(account);
   // const proxyUrl = `http://cxhytyoh:s1lnkdebw8bs@206.206.119.223:6134`
-  const proxyUrl = `http://hmpu0o6s:hMpU0o6S@51.81.141.175:39935`
+  const proxyUrl = `http://muaproxy6972eb969d964:wp1thllfcvzqx34s@200.229.24.182:26212`
   const agent = new HttpProxyAgent(proxyUrl);
   client.getDefaultApi().initOverrides({ agent });
   clientsCache.set(account.id, client);
